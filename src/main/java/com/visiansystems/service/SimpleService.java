@@ -20,7 +20,7 @@ public interface SimpleService {
     Collection<SimpleObject> findAll();
 
     /**
-     * Find a single Greeting entity by primary key identifier.
+     * Find a single 'SimpleObject' entity by primary key identifier.
      *
      * @param id A BigInteger primary key identifier.
      * @return A Greeting or <code>null</code> if none found.
@@ -51,9 +51,4 @@ public interface SimpleService {
      * @param id A BigInteger primary key identifier.
      */
     void delete(Long id);
-
-    /**
-     * Evicts all members of the "greetings" cache.
-     */
-    void evictCache();
 }

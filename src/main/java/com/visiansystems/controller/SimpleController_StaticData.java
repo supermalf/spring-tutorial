@@ -19,7 +19,7 @@ import java.util.Map;
 @RestController
 // --> 'RestController' annotation informs Spring that should convert the objects returned from
 // controller methods into json or XML responses.
-public class HardcodedValues_SimpleController {
+public class SimpleController_StaticData {
 
     // The code bellow is just an example to construct objects without using the repositories / DB
     private static Map<Long, SimpleObject> simpleObjectMap = new HashMap<>();

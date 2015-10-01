@@ -1,6 +1,6 @@
 package com.visiansystems.repository;
 
-import com.visiansystems.model.Greeting;
+import com.visiansystems.model.SimpleObject;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -9,10 +9,7 @@ import org.springframework.stereotype.Repository;
 * Greeting entities. The GreetingRepository provides all the data access
 * behaviors exposed by <code>JpaRepository</code> and additional custom
 * behaviors may be defined in this interface.
-*
-* @author Matt Warman
 */
 @Repository
-public interface SimpleRepository extends JpaRepository<Greeting, Long> {
-
+public interface SimpleRepository extends JpaRepository<SimpleObject, Long> {
 }
